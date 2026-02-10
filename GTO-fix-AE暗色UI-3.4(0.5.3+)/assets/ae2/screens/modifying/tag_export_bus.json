@@ -1,36 +1,30 @@
 {
-  "$schema": "schema.json",
+  "$schema": "../schema.json",
   "includes": [
-    "common/common.json",
-    "common/player_inventory.json",
-    "common/switch_toolbox.json"
+    "../common/common.json",
+    "../common/player_inventory.json",
+    "../common/switch_toolbox.json"
   ],
   "background": {
     "texture": "guis/tag_storage_bus.png",
-    "srcRect": [
-      0,
-      0,
-      176,
-      207
-    ]
+    "srcRect": [0, 0, 176, 207]
   },
   "text": {
     "dialog_title": {
       "text": {
-        "translate": "gui.expatternprovider.tag_storage_bus"
+        "translate": "gui.expatternprovider.tag_export_bus"
       },
       "position": {
         "left": 8,
-        "top": 4
+        "top": 6
       }
-    },
-    "whitelist": {
+    },"whitelist": {
       "text": {
         "translate": "gui.expatternprovider.tag_storage_bus.whitelist"
       },
       "position": {
         "left": 8,
-        "top": 54
+        "top": 46
       },
       "align": "LEFT"
     },
@@ -48,37 +42,28 @@
       "text": {
         "translate": "gui.expatternprovider.tag_storage_bus.desc.01"
       },
-      "position": {
-        "left": 8,
-        "top": 94
-      },
+      "position": { "left": 8, "top": 94 },
       "align": "LEFT"
     },
     "tooltip_02": {
       "text": {
         "translate": "gui.expatternprovider.tag_storage_bus.desc.02"
       },
-      "position": {
-        "right": 8,
-        "top": 94
-      },
+      "position": { "right": 8, "top": 94 },
       "align": "RIGHT"
     },
     "tooltip_03": {
       "text": {
         "translate": "gui.expatternprovider.tag_storage_bus.desc.03"
       },
-      "position": {
-        "left": 8,
-        "top": 104
-      },
+      "position": { "left": 8, "top": 104 },
       "align": "LEFT"
     }
   },
   "widgets": {
     "filter_input": {
       "left": 8,
-      "top": 26,
+      "top": 18,
       "width": 134,
       "height": 26
     },

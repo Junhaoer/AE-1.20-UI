@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sList=(
+  ""
 )
 declare -A cMap
 cMap=(
