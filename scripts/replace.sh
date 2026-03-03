@@ -2,6 +2,7 @@
 
 sList=(
   ""
+  ""
 )
 declare -A cMap
 cMap=(
@@ -20,5 +21,5 @@ for i in "${sList[@]}" ; do
 done
 
 for key in "${!cMap[@]}"; do
-  /home/qianxi/source/repos/CSharp/BrilliantIdeas/Tools/ImagePixelEditor/bin/Debug/net10.0/ImagePixelEditor --source ${key} --target ${cMap[${key}]} -r --bias 1 ${sList[*]}
+  ./ImagePixelEditor/ImagePixelEditor --source ${key} --target ${cMap[${key}]} -r --bias 1 ${sList[*]}
 done
