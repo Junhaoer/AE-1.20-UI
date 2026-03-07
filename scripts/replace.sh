@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sList=(
-
+    "/home/qianxi/source/repos/Other/aeui/DarkMode/assets/ftbquests/textures/gui/jei/quest.png"
 )
 declare -A cMap
 cMap=(
