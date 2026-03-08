@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sList=(
-  "/home/qianxi/source/repos/Other/aeui/DarkMode/assets/laserio/textures/gui"
+  "/home/qianxi/source/repos/Other/aeui/DarkMode/assets/advanced_ae/textures/guis"
 )
 declare -A cMap
 cMap=(

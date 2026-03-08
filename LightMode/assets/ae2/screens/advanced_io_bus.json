@@ -6,7 +6,7 @@
   "text": {
     "dialog_title": {
       "text": {
-        "translate": "gui.advanced_ae.ImportExportBus"
+        "translate": "gui.advanced_ae.AdvancedIOBus"
       },
       "position": {
         "left": 8,
