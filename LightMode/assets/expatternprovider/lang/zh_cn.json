@@ -110,7 +110,7 @@
   "gui.expatternprovider.mode.anvil": "铁砧",
   "gui.expatternprovider.mode.crafting": "合成",
   "gui.expatternprovider.mode.smithing": "锻造",
-  "gui.expatternprovider.mode.stonecutter": "切石机",
+  "gui.expatternprovider.mode.stonecutter": "切石",
   "gui.expatternprovider.oversize_interface": "ME超大接口",
   "gui.expatternprovider.pattern_modifier": "样板修改器（%s）",
   "gui.expatternprovider.pattern_modifier.blank": "空白样板",
