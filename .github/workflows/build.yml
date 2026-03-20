@@ -58,6 +58,8 @@ jobs:
           echo "$GPG_PRIVATE_KEY" | gpg --batch --import
       - name: Sign artifacts
         if: env.GPG_PRIVATE_KEY != ''
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
         run: |
           echo "GPG_PRIVATE_KEY is set, starting signing..."
           ls -la build/
