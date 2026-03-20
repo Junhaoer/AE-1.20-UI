@@ -60,12 +60,15 @@ jobs:
         if: env.GPG_PRIVATE_KEY != ''
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
         run: |
-          echo "GPG_PRIVATE_KEY is set, starting signing..."
           ls -la build/
           for file in build/*.zip; do
-            echo "Signing $file"
-            gpg --batch --yes --detach-sign --armor "$file"
+            if [ -n "$GPG_PASSPHRASE" ]; then
+              gpg --batch --yes --pinentry-mode loopback --passphrase "$GPG_PASSPHRASE" --detach-sign --armor "$file"
+            else
+              gpg --batch --yes --detach-sign --armor "$file"
+            fi
           done
       - name: Create Release
         uses: softprops/action-gh-release@v2
